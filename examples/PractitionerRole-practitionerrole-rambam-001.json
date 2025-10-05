@@ -1,0 +1,73 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "practitionerrole-rambam-001",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "practitioner",
+        "display": "מטפל"
+      }
+    ],
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role",
+      "http://fhir.rmc.gov.il/StructureDefinition/rambam-practitioner-role"
+    ],
+    "versionId": "1",
+    "lastUpdated": "2025-01-01T09:00:00Z"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.rmc.gov.il/identifier/rambam-emp-role",
+      "value": "EMP12345"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+972-4-7771234"
+    },
+    {
+      "system": "email",
+      "value": "dr.cohen@rmc.gov.il"
+    }
+  ],
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.rmc.gov.il/cs/occup-code",
+          "code": "doctor",
+          "display": "Doctor"
+        },
+        {
+          "system": "http://fhir.rmc.gov.il/cs/external-uri",
+          "code": "consultant",
+          "display": "Consultant Physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.rmc.gov.il/cs/expert-code",
+          "code": "cardiology",
+          "display": "Cardiology"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394579002",
+          "display": "Cardiology"
+        }
+      ]
+    }
+  ],
+  "practitioner": {
+    "reference": "Practitioner/example-practitioner"
+  },
+  "organization": {
+    "reference": "Organization/rambam-hospital"
+  }
+}

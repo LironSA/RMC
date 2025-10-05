@@ -1,0 +1,123 @@
+{
+  "resourceType": "Practitioner",
+  "id": "rambam-practitioner-001",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "practitioner",
+        "display": "מטפל"
+      }
+    ],
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner",
+      "http://fhir.rmc.gov.il/StructureDefinition/rambam-practitioner"
+    ],
+    "versionId": "1",
+    "lastUpdated": "2025-01-15T08:00:00Z"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.rmc.gov.il/identifier/rambam-emp",
+      "value": "EMP5678"
+    },
+    {
+      "system": "http://fhir.rmc.gov.il/identifier/rambam-emp-temp",
+      "value": "TEMP9999"
+    },
+    {
+      "system": "http://practitioners.health.gov.il/Practitioners",
+      "value": "1-12345",
+      "assigner": {
+        "reference": "Organization/ministry-of-health"
+      }
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/il-national-id",
+      "value": "000000018",
+      "assigner": {
+        "reference": "Organization/ministry-of-interior"
+      }
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/encrypted-id-primary-moh",
+      "value": "XYZ-Encrypted-00018"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "דוד"
+      ],
+      "family": "כהן"
+    }
+  ],
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "http://practitioners.health.gov.il/Practitioners",
+          "value": "1-12345"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "1",
+                "system": "http://fhir.health.gov.il/cs/practitioner-profession-moh",
+                "display": "רפואה"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "2",
+            "system": "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"
+          }
+        ]
+      },
+      "issuer": {
+        "reference": "Organization/ministry-of-health"
+      }
+    },
+    {
+      "identifier": [
+        {
+          "system": "http://fhir.health.gov.il/identifier/practitioner-expertise",
+          "value": "12345"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "1",
+                "system": "http://fhir.health.gov.il/cs/practitioner-expertise-moh",
+                "display": "רפואה פנימית"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "5",
+            "system": "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"
+          }
+        ]
+      },
+      "issuer": {
+        "reference": "Organization/ministry-of-health"
+      }
+    }
+  ]
+}

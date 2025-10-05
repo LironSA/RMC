@@ -1,0 +1,82 @@
+{
+  "resourceType": "Organization",
+  "id": "rambam-org-001",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "organization"
+      }
+    ],
+    "profile": [
+      "http://fhir.rmc.gov.il/StructureDefinition/rambam-organization"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://institutions.health.gov.il/Institutions",
+      "value": "1234567"
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/legal-entity",
+      "value": "512345678"
+    },
+    {
+      "system": "http://fhir.rmc.gov.il/identifier/dept-rmb",
+      "value": "CARD-01"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "76",
+          "system": "http://fhir.health.gov.il/cs/institution-type-moh",
+          "display": "משרדי ממשלה"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "10000",
+          "system": "http://fhir.health.gov.il/cs/department-type-moh",
+          "display": "אשפוז - פנימית"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://fhir.rmc.gov.il/cs/dept-type-rmb",
+          "code": "cardiology",
+          "display": "Cardiology Department"
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+972-4-7771111",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "info@rmc.gov.il",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "8 HaAliya HaShniya St."
+      ],
+      "city": "Haifa",
+      "postalCode": "3109601",
+      "country": "IL"
+    }
+  ],
+  "active": true,
+  "name": "Rambam Health Care Campus"
+}
