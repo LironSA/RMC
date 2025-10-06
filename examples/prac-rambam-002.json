@@ -1,0 +1,50 @@
+{
+  "resourceType": "Practitioner",
+  "id": "EMP.123456",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "practitioner",
+        "display": "מטפל"
+      }
+    ],
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner",
+      "http://fhir.rmc.gov.il/StructureDefinition/rambam-practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.rmc.gov.il/identifier/rambam-emp",
+      "value": "123456"
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/il-national-id",
+      "value": "000000018"
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/encrypted-id-primary-moh",
+      "value": "XYZ-Encrypted-00018"
+    },
+    {
+      "system": "http://fhir.rmc.gov.il/identifier/rambam-emp-temp",
+      "value": "121212"
+    },
+    {
+      "system": "http://practitioners.health.gov.il/Practitioners",
+      "value": "1-12345"
+    }
+  ],
+  "active":true,
+  "name": [
+    {
+      "given": [
+        "דוד"
+      ],
+      "family": "כהן"
+    }
+  ],
+  "gender": "male",
+  "birthday": "1984"
+}

@@ -1,0 +1,63 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "1234.1",
+  "meta": {
+    "security": [
+      {
+        "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+        "code": "practitioner",
+        "display": "מטפל"
+      }
+    ],
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role",
+      "http://fhir.rmc.gov.il/StructureDefinition/rambam-practitioner-role"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.rmc.gov.il/identifier/rambam-emp-role",
+      "value": "1234.1"
+    }
+  ],
+  "practitioner": {
+    "reference": "Practitioner/EMP.123456"
+  },
+  "organization": {
+    "reference": "Organization/HOSP.01102"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.rmc.gov.il/cs/occup-code",
+          "code": "700",
+          "display": "רופאי בתי חולים"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "158965000",
+          "display": "Medical practitioner (occupation)"
+        }
+      ],
+      "text": "רןפאי בתי חולים"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://fhir.rmc.gov.il/cs/expert-code",
+          "code": "708",
+          "display": "נפרולוגיה"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394579003",
+          "display": "Nephrology (qualifier value)"
+        }
+      ],
+      "text": "נפרולוגיה"
+    }
+  ]
+}
