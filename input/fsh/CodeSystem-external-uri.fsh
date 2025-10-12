@@ -9,4 +9,4 @@ Description: "רשימת כתובות URI של מערכות קידוד עבור 
 * ^experimental = false
 * ^valueSet = $vs-external-uris
 * #http://terminology.hl7.org/CodeSystem/practitioner-role "practitioner role code"
-* #http://www.snomed.org/ "SNOMED-CT"
+* #http://snomed.info/sct "SNOMED-CT"
