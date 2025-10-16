@@ -8,3 +8,7 @@ Thumbs.db
 /jre
 /node_modules
 validator_cli.jar
+/.vscode
+/.idea
+/.history
+/.fhir
