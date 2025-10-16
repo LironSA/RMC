@@ -32,16 +32,16 @@ Description: "PractitionerRole at Rambam Medical Center demonstrating required s
 
 // code.coding with slices
 * code.coding[internal].system = $practitioner-role-code
-* code.coding[internal].code = #doctor
-* code.coding[internal].display = "Doctor"
+* code.coding[internal].code = #730
+* code.coding[internal].display = "רופאים מינהלים"
 * code.coding[external].system = $external-uri
 * code.coding[external].code = #consultant
 * code.coding[external].display = "Consultant Physician"
 
 // specialty.coding with slices
 * specialty.coding[internal].system = $practitioner-specialty
-* specialty.coding[internal].code = #cardiology
-* specialty.coding[internal].display = "Cardiology"
+* specialty.coding[internal].code = #730
+* specialty.coding[internal].display = "אנטומיה פתולוגית"
 * specialty.coding[external].system = "http://snomed.info/sct"
 * specialty.coding[external].code = #394579002
 * specialty.coding[external].display = "Cardiology"
