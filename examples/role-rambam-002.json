@@ -30,7 +30,7 @@
     {
       "coding": [
         {
-          "system": "http://fhir.rmc.gov.il/cs/occup-code",
+          "system": "http://fhir.rmc.gov.il/cs/practitioner-role-code",
           "code": "700",
           "display": "רופאי בתי חולים"
         },
