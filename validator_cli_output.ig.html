@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Validation Results</title>
+  <link href="http://hl7.org/fhir/fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results</h1>
+ <p>0 errors, 32 warnings, 9 hints. Generated 3 Nov 2025, 19:14:08 by Validator Version 6.7.6 (Git# d7148cb9f6ad). Built 2025-10-30T09:57:37.289Z (4 days old) (18499ms)</p>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;1"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-department-type.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;2"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-practitioner-role-code.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;3"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-practitioner-role-external-uri.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;4"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-practitioner-specialty.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;5"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-visit-accept-type.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;6"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\Organization-rambam-hospital.json</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;7"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\Practitioner-rambam-practitioner-001.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>5</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;8"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\PractitionerRole-practitionerrole-rambam-001.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;9"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-encounter-case.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;10"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-encounter-moves.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;11"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-location.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;12"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-organization.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;13"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-patient.json</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;14"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-practitioner-role.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;15"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-practitioner.json</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;16"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-department-type.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;17"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-practitioner-specialty.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;18"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-vs-external-uris.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;19"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-vs-practitioner-role-code.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;20"><b>C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-vs-visit-accept-type.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l1"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-department-type.json">C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-department-type.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l2"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-practitioner-role-code.json">C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-practitioner-role-code.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l3"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-practitioner-role-external-uri.json">C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-practitioner-role-external-uri.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l4"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-practitioner-specialty.json">C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-practitioner-specialty.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l5"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-visit-accept-type.json">C:\FHIR\RMC\differentials\fsh-generated\resources\CodeSystem-visit-accept-type.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l6"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\Organization-rambam-hospital.json">C:\FHIR\RMC\differentials\fsh-generated\resources\Organization-rambam-hospital.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.meta.security[0] (l6/c8)</b></td><td><b>information</b></td><td title="MSG_RETIRED"><b>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization.type[1].coding[0] (l39/c6)</b></td><td><b>warning</b></td><td title="DEPRECATED_CONCEPT_FOUND"><b>The concept '10000' is deprecated and its use should be reviewed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization.type[2].coding[0].system (l48/c6)</b></td><td><b>warning</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'http://fhir.rmc.gov.il/cs/dept-type-rmb' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.type[2] (l48/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.rmc.gov.il/StructureDefinition/rambam-organization (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm10" class="flip" onclick="flip('m10')">Show Reasoning</span><div id="m10" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.rmc.gov.il/StructureDefinition/rambam-organization (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Organization.type[2]: discriminator = true and ($this memberOf 'http://fhir.health.gov.il/ValueSet/institution-type-moh')</li>, <li>Organization.type[2]: discriminator = true and ($this memberOf 'http://fhir.health.gov.il/ValueSet/department-type-moh')</li>, <li>Organization.type[2]: discriminator = true and ($this memberOf 'http://fhir.health.gov.il/ValueSet/il-core-community-unit-type')</li>, <li>Organization.type[2]: discriminator = true and ($this memberOf 'http://fhir.rmc.gov.il/ValueSet/department-type')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization.type[2].coding[0] (l48/c6)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://fhir.rmc.gov.il/cs/dept-type-rmb' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization.type[2] (l48/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ILHDP Organization Types' (http://hdp.fhir.health.gov.il/ValueSet/il-hdp-organization-types|0.2.4), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.rmc.gov.il/cs/dept-type-rmb#cardiology)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l7"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\Practitioner-rambam-practitioner-001.json">C:\FHIR\RMC\differentials\fsh-generated\resources\Practitioner-rambam-practitioner-001.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.meta.security[0] (l6/c8)</b></td><td><b>information</b></td><td title="MSG_RETIRED"><b>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Practitioner.meta.security[0] (l6/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_13"><b>The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#practitioner) was not found in the value set 'SecurityLabels' (http://hl7.org/fhir/ValueSet/security-labels|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#practitioner: 'מטפל'' was not found in the value set 'http://hl7.org/fhir/ValueSet/security-labels|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Practitioner (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.identifier[0] (l20/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm16" class="flip" onclick="flip('m16')">Show Reasoning</span><div id="m16" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.identifier[0]: discriminator = true and ('http://practitioners.health.gov.il/Practitioners' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://practitioners.health.gov.il/Nurses' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/molsa-socialworker-lic' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/il-national-id' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/pna-national-id' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/encrypted-pna-id-primary-moh' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and (system memberOf 'http://fhir.health.gov.il/ValueSet/passport-uri')</li>, <li>Practitioner.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/encrypted-id-primary-moh' in system)</li>, <li>Practitioner.identifier[0]: discriminator = true and (system memberOf 'http://fhir.health.gov.il/ValueSet/passport-enc-uri')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.identifier[1] (l24/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm17" class="flip" onclick="flip('m17')">Show Reasoning</span><div id="m17" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.identifier[1]: discriminator = true and ('http://practitioners.health.gov.il/Practitioners' in system)</li>, <li>Practitioner.identifier[1]: discriminator = true and ('http://practitioners.health.gov.il/Nurses' in system)</li>, <li>Practitioner.identifier[1]: discriminator = true and ('http://fhir.health.gov.il/identifier/molsa-socialworker-lic' in system)</li>, <li>Practitioner.identifier[1]: discriminator = true and ('http://fhir.health.gov.il/identifier/il-national-id' in system)</li>, <li>Practitioner.identifier[1]: discriminator = true and ('http://fhir.health.gov.il/identifier/pna-national-id' in system)</li>, <li>Practitioner.identifier[1]: discriminator = true and ('http://fhir.health.gov.il/identifier/encrypted-pna-id-primary-moh' in system)</li>, <li>Practitioner.identifier[1]: discriminator = true and (system memberOf 'http://fhir.health.gov.il/ValueSet/passport-uri')</li>, <li>Practitioner.identifier[1]: discriminator = true and ('http://fhir.health.gov.il/identifier/encrypted-id-primary-moh' in system)</li>, <li>Practitioner.identifier[1]: discriminator = true and (system memberOf 'http://fhir.health.gov.il/ValueSet/passport-enc-uri')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0] (l48/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm18" class="flip" onclick="flip('m18')">Show Reasoning</span><div id="m18" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.18.4 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0]: discriminator = true and ('he' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li>, <li>Practitioner.name[0]: discriminator = true and ('en' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li>, <li>Practitioner.name[0]: discriminator = true and ('ar' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0] (l48/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.rmc.gov.il/StructureDefinition/rambam-practitioner (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm19" class="flip" onclick="flip('m19')">Show Reasoning</span><div id="m19" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.rmc.gov.il/StructureDefinition/rambam-practitioner (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0]: discriminator = true and ('he' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li>, <li>Practitioner.name[0]: discriminator = true and ('en' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li>, <li>Practitioner.name[0]: discriminator = true and ('ar' in extension('http://hl7.org/fhir/StructureDefinition/language').value)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l8"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\PractitionerRole-practitionerrole-rambam-001.json">C:\FHIR\RMC\differentials\fsh-generated\resources\PractitionerRole-practitionerrole-rambam-001.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>PractitionerRole.meta.security[0] (l6/c8)</b></td><td><b>information</b></td><td title="MSG_RETIRED"><b>Reference to retired ValueSet http://terminology.hl7.org/ValueSet/v3-ActUSPrivacyLaw|3.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole.meta.security[0] (l6/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_13"><b>The Coding provided (http://fhir.health.gov.il/cs/il-hdp-information-buckets#practitioner) was not found in the value set 'SecurityLabels' (http://hl7.org/fhir/ValueSet/security-labels|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = The provided code 'http://fhir.health.gov.il/cs/il-hdp-information-buckets#practitioner: 'מטפל'' was not found in the value set 'http://hl7.org/fhir/ValueSet/security-labels|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>PractitionerRole.code[0] (l36/c6)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.rmc.gov.il/cs/practitioner-role-code</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l9"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-encounter-case.json">C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-encounter-case.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l10"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-encounter-moves.json">C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-encounter-moves.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l11"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-location.json">C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-location.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l12"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-organization.json">C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-organization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l13"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-patient.json">C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-patient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential (l15/c4)</b></td><td><b>warning</b></td><td title="null"><b>The slice 'Hebrew' on path 'Patient.name' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential (l15/c4)</b></td><td><b>warning</b></td><td title="null"><b>The slice 'English' on path 'Patient.name' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential (l15/c4)</b></td><td><b>warning</b></td><td title="null"><b>The slice 'Arabic' on path 'Patient.name' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l14"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-practitioner-role.json">C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-practitioner-role.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l15"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-practitioner.json">C:\FHIR\RMC\differentials\fsh-generated\resources\StructureDefinition-rambam-practitioner.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential (l15/c4)</b></td><td><b>warning</b></td><td title="null"><b>The slice 'Hebrew' on path 'Practitioner.name' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential (l15/c4)</b></td><td><b>warning</b></td><td title="null"><b>The slice 'English' on path 'Practitioner.name' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential (l15/c4)</b></td><td><b>warning</b></td><td title="null"><b>The slice 'Arabic' on path 'Practitioner.name' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l16"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-department-type.json">C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-department-type.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l17"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-practitioner-specialty.json">C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-practitioner-specialty.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l18"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-vs-external-uris.json">C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-vs-external-uris.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l19"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-vs-practitioner-role-code.json">C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-vs-practitioner-role-code.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l20"> </a>
+<h2><a href="file:C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-vs-visit-accept-type.json">C:\FHIR\RMC\differentials\fsh-generated\resources\ValueSet-vs-visit-accept-type.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2)</b></td><td><b>warning</b></td><td title="http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>

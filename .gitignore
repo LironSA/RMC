@@ -12,3 +12,4 @@ validator_cli.jar
 /.idea
 /.history
 /.fhir
+/differentials
