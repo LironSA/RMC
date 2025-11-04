@@ -9,6 +9,7 @@ Description: "Organization profile for Rambam Medical Center extending the Israe
 * identifier[dept-rmb].system = "http://fhir.rmc.gov.il/identifier/dept-rmb" (exactly)
 * identifier[dept-rmb].value 1..1
 * type contains dept-type-rmb 0..1
+* type[dept-type-rmb] from $vs-department-type (required)
 * type[dept-type-rmb].coding.system 1..1
 * type[dept-type-rmb].coding.system = "http://fhir.rmc.gov.il/cs/dept-type-rmb" (exactly)
 * type[dept-type-rmb].coding.code 1..1

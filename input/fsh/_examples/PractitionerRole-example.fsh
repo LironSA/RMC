@@ -34,9 +34,9 @@ Description: "PractitionerRole at Rambam Medical Center demonstrating required s
 * code.coding[internal].system = $practitioner-role-code
 * code.coding[internal].code = #730
 * code.coding[internal].display = "רופאים מינהלים"
-* code.coding[external].system = $external-uri
-* code.coding[external].code = #consultant
-* code.coding[external].display = "Consultant Physician"
+* code.coding[external].system = "http://terminology.hl7.org/CodeSystem/practitioner-role"
+* code.coding[external].code = #doctor
+* code.coding[external].display = "Doctor"
 
 // specialty.coding with slices
 * specialty.coding[internal].system = $practitioner-specialty

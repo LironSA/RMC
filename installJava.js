@@ -5,7 +5,7 @@ import fs from 'fs-extra';
 import AdmZip from 'adm-zip';
 import { $ } from 'execa';
 import { getJrePath, getJreBin, fetch } from "./utils.js";
-
+ 
 const unzipDirectory = async (inputFilePath, outputDirectory) => {
   const zip = new AdmZip(inputFilePath);
   return new Promise((resolve, reject) => {
@@ -20,9 +20,9 @@ const unzipDirectory = async (inputFilePath, outputDirectory) => {
       });
   });
 };
-
+ 
 const extractFileName = (contentDisposition) => {
-  let filename = 'OpenJDK11.zip'; // default
+  let filename = 'OpenJDK21.zip'; // default
   if (typeof contentDisposition === 'string' && contentDisposition.startsWith('attachment;')) {
     const parts = contentDisposition.split(';');
     const namePart = parts.length > 1 ? parts[1].trimStart() : undefined;
@@ -36,7 +36,7 @@ const extractFileName = (contentDisposition) => {
   };
   return filename;
 };
-
+ 
 const download = async (dir, url) => {
   console.log(`Downloading JRE archive from ${url} into ${dir}`);
   fs.ensureDirSync(dir);
@@ -52,7 +52,7 @@ const download = async (dir, url) => {
     throw new Error('Download failed :(')
   }
 };
-
+ 
 const move = (file) => {
   const newFile = path.join(path.resolve('.'), file.split(path.sep).slice(-1)[0]);
   console.log(`Moving ${file} to ${newFile}`);
@@ -60,14 +60,14 @@ const move = (file) => {
   fs.unlinkSync(file);
   return newFile;
 }
-
+ 
 const extractTarGz = async (file, dir) => {
   console.log(`Extracting ${file} into ${dir}`);
   x({file, cwd: dir});
   fs.unlinkSync(file);
   return dir;
 }
-
+ 
 const extract = async (file) => {
   const dir = getJrePath();
   fs.ensureDirSync(dir);
@@ -82,16 +82,16 @@ const extract = async (file) => {
   await fs.unlink(file);
   return dir;
 };
-
+ 
 const installJre = async () => {
   console.log('Getting fresh copy of JRE...')
   const javaDir = await install();
   console.log({ javaDir });
   return javaDir
 };
-
+ 
 const install = async () => {
-  const version = 11;
+  const version = 21;
   const options = {
     openjdk_impl: "hotspot",
     release: "latest",
@@ -99,10 +99,10 @@ const install = async () => {
     heap_size: "normal",
     vendor: "adoptopenjdk"
   };
-
+ 
   const endpoint = "api.adoptopenjdk.net";
   const versionPath = "latest/" + version + "/ga";
-
+ 
   switch (process.platform) {
     case "aix":
       options.os = "aix";
@@ -122,14 +122,14 @@ const install = async () => {
     default:
         throw new Error(`Unsupported operating system ${process.platform}`)
   }
-
-
+ 
+ 
   if (/^ppc64|s390x|x32|x64$/g.test(process.arch)) options.arch = process.arch;
   else if (process.arch === "ia32") options.arch = "x32";
   else if (process.arch === "arm64") options.arch = "aarch64";
   else
     throw new Error(`Unsupported architecture ${process.arch}`)  
-
+ 
   const url =
     "https://" +
     endpoint +
@@ -147,15 +147,15 @@ const install = async () => {
     options.heap_size +
     "/" +
     options.vendor;
-
+ 
   const tmpdir = path.join(_tmpdir(), "jre");
-
+ 
   console.log("Java URL: " + url);
   const file = await download(tmpdir, url);
   const newFile = move(file);
   return await extract(newFile);
 };
-
+ 
 const isJavaInstalled = async () => {
   const jreBin = getJreBin()
   if (jreBin) {
@@ -165,7 +165,7 @@ const isJavaInstalled = async () => {
       return false;
   }
 };
-
+ 
 const ensure = async () => {
     let javaInstalled = false;
     console.log('Checking for JRE...');
@@ -179,5 +179,7 @@ const ensure = async () => {
     console.log({ javaInstalled });
     return javaInstalled;
 };
-
+ 
 ensure();
+ 
+ 

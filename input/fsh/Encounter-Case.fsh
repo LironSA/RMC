@@ -22,10 +22,8 @@ Description: "Rambam Encounter Case Profile"
 * status 1..1
 * class 1..1
 * type 0..*
-* type ^slicing.discriminator.type = #value
-* type ^slicing.discriminator.path = "system"
-* type ^slicing.rules = #open
 * type contains rmc-admission-type 0..1
+* type[rmc-admission-type] from $vs-visit-accept-type (required)
 * type[rmc-admission-type].coding 1..1
 * type[rmc-admission-type].coding.system 1..1
 * type[rmc-admission-type].coding.system = "http://fhir.rmc.gov.il/CodeSystem/visit-accept-type" (exactly)
